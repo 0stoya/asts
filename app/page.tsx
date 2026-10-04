@@ -7,10 +7,9 @@ import {
   MapPin,
   MessageCircle,
   Phone,
-  ShieldCheck,
-  Star,
 } from "lucide-react";
 
+import { CustomerReviews } from "@/src/components/CustomerReviews";
 import { SeasonalAdvice } from "@/src/components/SeasonalAdvice";
 import { currentSeason } from "@/src/config/seasons";
 import { services } from "@/src/config/services";
@@ -158,32 +157,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section review-section">
-        <div className="shell review-layout">
-          <div>
-            <span className="eyebrow"><Star size={16} /> Customer confidence</span>
-            <h2>Recommended by the people whose gardens we work in.</h2>
-            <p>
-              The existing Facebook page shows {site.recommendation} recommendation
-              from {site.reviewCount} customer reviews. We&apos;ll bring genuine
-              review excerpts into this section once they&apos;re selected.
-            </p>
-            <a className="text-link" href={site.facebook} target="_blank" rel="noreferrer">
-              See the Facebook page <ArrowRight size={17} />
-            </a>
-          </div>
-          <div className="review-summary">
-            <ShieldCheck size={34} />
-            <strong>{site.recommendation}</strong>
-            <span>recommended</span>
-            <div className="recommendation-row">
-              <CheckCircle2 size={18} />
-              <span>{site.reviewCount} customer reviews</span>
-            </div>
-            <small>Based on the current Facebook business profile.</small>
-          </div>
-        </div>
-      </section>
+      <CustomerReviews />
 
       <section className="quote-band">
         <div className="shell quote-layout">
