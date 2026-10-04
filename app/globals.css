@@ -690,11 +690,17 @@ main {
   font-weight: 800;
 }
 
-.review-stars {
-  display: flex;
-  gap: 3px;
+.recommendation-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   margin-block: 20px 12px;
-  color: var(--autumn-500);
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: white;
+  color: var(--forest-700);
+  font-size: 0.82rem;
+  font-weight: 850;
 }
 
 .review-summary small {

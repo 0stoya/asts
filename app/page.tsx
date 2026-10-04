@@ -16,7 +16,7 @@ import { currentSeason } from "@/src/config/seasons";
 import { services } from "@/src/config/services";
 import { site } from "@/src/config/site";
 
-const projects = [
+export const revalidate = 86400;\n\nconst projects = [
   {
     title: "Garden clearance",
     location: "Redhill",
@@ -174,12 +174,9 @@ export default function Home() {
             <ShieldCheck size={34} />
             <strong>{site.recommendation}</strong>
             <span>recommended</span>
-            <div className="review-stars" aria-label="Customer recommendation">
-              <Star size={18} fill="currentColor" />
-              <Star size={18} fill="currentColor" />
-              <Star size={18} fill="currentColor" />
-              <Star size={18} fill="currentColor" />
-              <Star size={18} fill="currentColor" />
+            <div className="recommendation-row">
+              <CheckCircle2 size={18} />
+              <span>{site.reviewCount} customer reviews</span>
             </div>
             <small>Based on the current Facebook business profile.</small>
           </div>
