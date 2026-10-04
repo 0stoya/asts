@@ -10,27 +10,15 @@ import {
 
 import { ContactCtas } from "@/src/components/ContactCtas";
 import { CustomerReviews } from "@/src/components/CustomerReviews";
+import { ProjectCard } from "@/src/components/ProjectCard";
 import { SeasonalAdvice } from "@/src/components/SeasonalAdvice";
 import { currentSeason } from "@/src/config/seasons";
+import { projects } from "@/src/config/projects";
 import { services } from "@/src/config/services";
 import { site } from "@/src/config/site";
 
 export const revalidate = 86400;
 
-const projects = [
-  {
-    title: "Garden clearance",
-    location: "Redhill",
-    image: "/images/projects/garden-clearance/redhill.svg",
-    description: "A full garden tidy-up ready for the next stage of the customer's revamp.",
-  },
-  {
-    title: "Hedge tidy-up",
-    location: "St Paul's Cray",
-    image: "/images/projects/hedge-cutting/st-pauls-cray.svg",
-    description: "An overgrown boundary brought back into a cleaner, more manageable shape.",
-  },
-];
 
 export default function Home() {
   const season = currentSeason();
@@ -128,7 +116,7 @@ export default function Home() {
           <div className="section-heading">
             <div>
               <span className="eyebrow"><Camera size={16} /> Recent work</span>
-              <h2>Real gardens. Real before-and-after difference.</h2>
+              <h2>Local jobs. Clear results.</h2>
             </div>
             <Link className="text-link" href="/our-work">
               View our work <ArrowRight size={17} />
@@ -136,22 +124,8 @@ export default function Home() {
           </div>
 
           <div className="project-grid">
-            {projects.map((project) => (
-              <article className="project-card" key={project.title}>
-                <div className="project-image">
-                  <Image
-                    src={project.image}
-                    alt=""
-                    fill
-                    sizes="(max-width: 760px) 100vw, 50vw"
-                  />
-                </div>
-                <div className="project-copy">
-                  <span>{project.location}</span>
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-                </div>
-              </article>
+            {projects.slice(0, 2).map((project) => (
+              <ProjectCard project={project} key={project.slug} />
             ))}
           </div>
         </div>
@@ -165,7 +139,7 @@ export default function Home() {
         <div className="shell assurance-grid">
           <span><CheckCircle2 size={17} /> Local service</span>
           <span><CheckCircle2 size={17} /> 13+ years&apos; experience</span>
-          <span><CheckCircle2 size={17} /> Genuine project photography</span>
+          <span><CheckCircle2 size={17} /> Real customer recommendations</span>
         </div>
       </section>
     </>
