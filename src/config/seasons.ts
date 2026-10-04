@@ -23,7 +23,7 @@ export const seasons: Record<SeasonKey, Season> = {
     headline: "Fresh growth deserves a good start.",
     intro:
       "A useful time to assess winter damage, prepare gardens and keep new hedge growth under control.",
-    heroImage: "/images/hero/spring/hero-spring.svg",
+    heroImage: "/images/hero/spring/spring.png",
     advice: [
       {
         title: "Inspect after winter",
@@ -49,7 +49,7 @@ export const seasons: Record<SeasonKey, Season> = {
     headline: "Keep growing gardens tidy and usable.",
     intro:
       "Long days and vigorous growth make regular garden and hedge maintenance especially valuable.",
-    heroImage: "/images/hero/summer/hero-summer.svg",
+    heroImage: "/images/hero/summer/summer.png",
     advice: [
       {
         title: "Maintain hedges",
@@ -75,7 +75,7 @@ export const seasons: Record<SeasonKey, Season> = {
     headline: "Prepare your garden for the colder months.",
     intro:
       "A practical season for garden clearance, winter preparation and planning tree and hedge work.",
-    heroImage: "/images/hero/autumn/hero-autumn.svg",
+    heroImage: "/images/hero/autumn/autumn.png",
     advice: [
       {
         title: "Plant trees & hedges",
@@ -106,7 +106,7 @@ export const seasons: Record<SeasonKey, Season> = {
     headline: "A quieter garden is easier to assess.",
     intro:
       "Winter can be a useful time to inspect structure, deal with selected tree work and plan spring improvements.",
-    heroImage: "/images/hero/winter/hero-winter.svg",
+    heroImage: "/images/hero/winter/winter.png",
     advice: [
       {
         title: "Inspect tree structure",

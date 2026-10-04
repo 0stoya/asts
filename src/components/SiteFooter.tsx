@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Facebook, Mail, MapPin, Phone } from "lucide-react";
 
@@ -8,6 +9,15 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="shell footer-grid">
         <div>
+          <div className="footer-logo-shell" aria-hidden="true">
+            <Image
+              className="footer-logo"
+              src="/images/brand/logo.png"
+              alt=""
+              width={170}
+              height={143}
+            />
+          </div>
           <p className="footer-brand">All Seasons Tree Surgery Ltd</p>
           <p className="footer-copy">
             Tree surgery, hedge care, stump grinding, garden clearance and

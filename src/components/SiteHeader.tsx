@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Menu, Phone } from "lucide-react";
 
@@ -16,11 +17,15 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="shell header-inner">
         <Link className="brand" href="/" aria-label="All Seasons Tree Surgery home">
-          <span className="brand-mark" aria-hidden="true">
-            <span className="brand-mark-trunk" />
-            <span className="brand-leaf brand-leaf-one" />
-            <span className="brand-leaf brand-leaf-two" />
-            <span className="brand-leaf brand-leaf-three" />
+          <span className="brand-logo-shell" aria-hidden="true">
+            <Image
+              className="brand-logo"
+              src="/images/brand/logo.png"
+              alt=""
+              width={72}
+              height={61}
+              priority
+            />
           </span>
           <span>
             <strong>All Seasons</strong>

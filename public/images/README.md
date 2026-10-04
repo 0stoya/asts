@@ -18,4 +18,4 @@ The site deliberately keeps photography under `/public/images` so final assets c
 - `seasonal/spring/`, `summer/`, `autumn/`, `winter/`
 - `social/` — Open Graph/social share artwork
 
-The checked-in SVG files are temporary layout-safe placeholders. Replace them with final .webp/.avif photography once the image pack is approved, then update the matching paths in `src/config/seasons.ts` and project data.
+The four seasonal homepage hero slots now use the V1 PNG artwork (`spring.png`, `summer.png`, `autumn.png`, `winter.png`), and `brand/logo.png` is wired into the site chrome. The older SVG hero files remain as layout-safe fallbacks/reference assets while the image pack develops. Project-card SVGs are still temporary placeholders until real project photography is added.

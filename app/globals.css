@@ -109,48 +109,22 @@ main {
   text-transform: uppercase;
 }
 
-.brand-mark {
-  position: relative;
-  display: inline-block;
-  width: 38px;
-  height: 42px;
+.brand-logo-shell {
+  display: grid;
+  flex: 0 0 auto;
+  width: 58px;
+  height: 54px;
+  overflow: hidden;
+  place-items: center;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 16px rgba(25, 49, 35, 0.08);
 }
 
-.brand-mark-trunk {
-  position: absolute;
-  bottom: 1px;
-  left: 18px;
-  width: 4px;
-  height: 30px;
-  border-radius: 4px;
-  background: #573b2d;
-}
-
-.brand-leaf {
-  position: absolute;
-  width: 18px;
-  height: 12px;
-  border-radius: 100% 0 100% 0;
-  transform: rotate(-18deg);
-}
-
-.brand-leaf-one {
-  top: 3px;
-  left: 2px;
-  background: var(--autumn-500);
-}
-
-.brand-leaf-two {
-  top: 12px;
-  right: 0;
-  background: var(--leaf-500);
-  transform: rotate(20deg) scaleX(-1);
-}
-
-.brand-leaf-three {
-  top: 20px;
-  left: 2px;
-  background: #4d9c75;
+.brand-logo {
+  width: 52px;
+  height: 44px;
+  object-fit: contain;
 }
 
 .desktop-nav {
@@ -916,6 +890,23 @@ main {
   gap: 10px;
 }
 
+.footer-logo-shell {
+  display: grid;
+  width: 150px;
+  min-height: 122px;
+  margin-bottom: 10px;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 18px;
+  background: white;
+}
+
+.footer-logo {
+  width: 138px;
+  height: auto;
+  object-fit: contain;
+}
+
 .footer-brand {
   margin: 0;
   color: white;
@@ -1013,6 +1004,20 @@ main {
 
   .brand strong {
     font-size: 1rem;
+  }
+
+  .brand {
+    gap: 9px;
+  }
+
+  .brand-logo-shell {
+    width: 50px;
+    height: 48px;
+  }
+
+  .brand-logo {
+    width: 45px;
+    height: 39px;
   }
 
   .home-hero {
