@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820">
+  <rect width="1200" height="820" fill="#d9e9ef"/>
+  <rect y="530" width="1200" height="290" fill="#77965f"/>
+  <rect x="0" y="315" width="1200" height="280" rx="80" fill="#456b3f"/>
+  <g fill="#577b4d"><circle cx="120" cy="310" r="120"/><circle cx="340" cy="275" r="145"/><circle cx="570" cy="300" r="125"/><circle cx="820" cy="280" r="150"/><circle cx="1080" cy="310" r="120"/></g>
+  <path d="M760 530 850 820H715Z" fill="#c6b294" opacity=".9"/>
+  <text x="70" y="90" font-family="Arial, sans-serif" font-size="26" fill="#1a3224" letter-spacing="3">REAL PROJECT PHOTO SLOT</text>
+  <text x="70" y="130" font-family="Georgia, serif" font-size="58" fill="#1a3224">Hedge tidy-up · St Paul's Cray</text>
+</svg>

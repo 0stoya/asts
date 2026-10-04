@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Temporary spring landscape placeholder">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#dfeeda"/><stop offset="1" stop-color="#f6f0df"/></linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#547a45"/><stop offset="1" stop-color="#183022"/></linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1320" cy="160" r="84" fill="#fff5cd" opacity=".78"/>
+  <path d="M0 570C260 490 410 510 640 580c270 82 480-30 960-110v430H0Z" fill="#7da663" opacity=".72"/>
+  <path d="M0 650c290-105 520 40 795-6 245-41 420-118 805-40v296H0Z" fill="url(#ground)"/>
+  <g transform="translate(1030 210)">
+    <rect x="88" y="230" width="30" height="320" rx="12" fill="#4c382a"/>
+    <path d="M104 298 20 185" stroke="#4c382a" stroke-width="22" stroke-linecap="round"/>
+    <path d="m103 350 110-155" stroke="#4c382a" stroke-width="20" stroke-linecap="round"/>
+    <ellipse cx="28" cy="170" rx="105" ry="76" fill="#86ad68"/>
+    <ellipse cx="208" cy="165" rx="118" ry="82" fill="#7da663"/>
+    <ellipse cx="110" cy="86" rx="130" ry="90" fill="#547a45"/>
+  </g>
+  <g opacity=".5">
+    <circle cx="980" cy="400" r="16" fill="#86ad68"/><circle cx="925" cy="445" r="10" fill="#86ad68"/><circle cx="1190" cy="420" r="13" fill="#86ad68"/>
+  </g>
+  <text x="90" y="785" fill="#ffffff" opacity=".72" font-family="Arial, sans-serif" font-size="22" letter-spacing="5">ALL SEASONS · SPRING PLACEHOLDER</text>
+</svg>
