@@ -495,11 +495,25 @@ main {
 }
 
 .seasonal-artwork {
-  opacity: 0.72;
+  opacity: 0.58;
 }
 
 .seasonal-wash {
-  background: rgba(251, 250, 245, 0.38);
+  background:
+    linear-gradient(
+      90deg,
+      rgba(251, 250, 245, 0.99) 0%,
+      rgba(251, 250, 245, 0.97) 25%,
+      rgba(251, 250, 245, 0.88) 43%,
+      rgba(251, 250, 245, 0.58) 62%,
+      rgba(251, 250, 245, 0.18) 82%,
+      rgba(251, 250, 245, 0.08) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(251, 250, 245, 0.14),
+      rgba(251, 250, 245, 0.14)
+    );
 }
 
 .seasonal-layout {
@@ -556,11 +570,12 @@ main {
 
 .advice-card {
   min-height: 180px;
-  border: 1px solid rgba(25, 49, 35, 0.09);
+  border: 1px solid rgba(25, 49, 35, 0.1);
   border-radius: 20px;
   padding: 24px;
-  background: rgba(255, 255, 255, 0.68);
-  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 28px rgba(25, 49, 35, 0.06);
+  backdrop-filter: blur(8px);
 }
 
 .advice-card h3 {
@@ -1209,6 +1224,18 @@ main {
     gap: 30px;
   }
 
+  .seasonal-artwork {
+    opacity: 0.48;
+  }
+
+  .seasonal-wash {
+    background: rgba(251, 250, 245, 0.76);
+  }
+
+  .advice-card {
+    background: rgba(255, 255, 255, 0.94);
+  }
+
   .section-heading > p {
     justify-self: start;
   }
@@ -1333,6 +1360,19 @@ main {
 
   .seasonal-section {
     padding-block: 70px;
+  }
+
+  .seasonal-artwork {
+    opacity: 0.4;
+  }
+
+  .seasonal-wash {
+    background: rgba(251, 250, 245, 0.86);
+  }
+
+  .advice-card {
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(10px);
   }
 
   .project-image {
