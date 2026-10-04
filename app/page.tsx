@@ -16,7 +16,9 @@ import { currentSeason } from "@/src/config/seasons";
 import { services } from "@/src/config/services";
 import { site } from "@/src/config/site";
 
-export const revalidate = 86400;\n\nconst projects = [
+export const revalidate = 86400;
+
+const projects = [
   {
     title: "Garden clearance",
     location: "Redhill",
