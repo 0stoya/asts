@@ -12,6 +12,7 @@ export type Season = {
   headline: string;
   intro: string;
   heroImage: string;
+  seasonalImage?: string;
   advice: SeasonalAdvice[];
 };
 
@@ -76,6 +77,7 @@ export const seasons: Record<SeasonKey, Season> = {
     intro:
       "A practical season for garden clearance, winter preparation and planning tree and hedge work.",
     heroImage: "/images/hero/autumn/autumn.png",
+    seasonalImage: "/images/seasonal/autumn/seasonal_autumn.png",
     advice: [
       {
         title: "Plant trees & hedges",

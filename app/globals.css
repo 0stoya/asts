@@ -475,11 +475,36 @@ main {
 
 .seasonal-section {
   position: relative;
+  overflow: hidden;
   padding-block: 96px;
   border-block: 1px solid rgba(25, 49, 35, 0.08);
   background:
     radial-gradient(circle at 2% 15%, rgba(192, 113, 48, 0.17), transparent 25%),
     linear-gradient(135deg, #f5ead9, #f8f4ea 56%, #edf1e6);
+}
+
+.seasonal-artwork,
+.seasonal-wash {
+  position: absolute;
+  inset: 0;
+}
+
+.seasonal-artwork img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.seasonal-artwork {
+  opacity: 0.72;
+}
+
+.seasonal-wash {
+  background: rgba(251, 250, 245, 0.38);
+}
+
+.seasonal-layout {
+  position: relative;
+  z-index: 2;
 }
 
 .season-spring.seasonal-section {
@@ -824,38 +849,112 @@ main {
   font-size: 0.92rem;
 }
 
-.quote-band {
-  padding-block: 85px;
-  color: white;
-  background:
-    linear-gradient(115deg, rgba(19, 37, 27, 0.99), rgba(35, 66, 47, 0.96)),
-    var(--forest-950);
+.contact-cta-section {
+  padding-block: 92px 34px;
+  border-top: 1px solid var(--cream-200);
+  background: var(--cream-100);
 }
 
-.quote-layout {
+.contact-cta-grid {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 60px;
-  align-items: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
 }
 
-.quote-band .eyebrow {
-  color: #aac49e;
+.contact-cta-card {
+  position: relative;
+  display: block;
+  min-height: 360px;
+  overflow: hidden;
+  border: 1px solid rgba(25, 49, 35, 0.09);
+  border-radius: var(--radius-lg);
+  background: white;
+  box-shadow: 0 12px 38px rgba(24, 49, 35, 0.08);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
-.quote-band h2 {
-  color: white;
+.contact-cta-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 52px rgba(24, 49, 35, 0.13);
 }
 
-.quote-band p {
-  max-width: 680px;
-  margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.72);
+.contact-cta-photos {
+  grid-column: 1 / -1;
+  min-height: 390px;
 }
 
-.quote-actions {
+.contact-cta-image {
+  object-fit: cover;
+  object-position: center;
+  transition: transform 500ms ease;
+}
+
+.contact-cta-card:hover .contact-cta-image {
+  transform: scale(1.015);
+}
+
+.contact-cta-shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(251, 250, 245, 0.98) 0%,
+      rgba(251, 250, 245, 0.94) 38%,
+      rgba(251, 250, 245, 0.66) 58%,
+      rgba(251, 250, 245, 0.08) 82%
+    );
+}
+
+.contact-cta-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: min(62%, 560px);
+  min-height: inherit;
   flex-direction: column;
-  min-width: 280px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 38px;
+}
+
+.contact-cta-content > strong {
+  margin-top: 9px;
+  color: var(--forest-950);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 3.2vw, 3.3rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.contact-cta-copy {
+  max-width: 460px;
+  margin-top: 14px;
+  color: #58635b;
+  font-size: 0.95rem;
+}
+
+.contact-cta-button {
+  margin-top: 24px;
+}
+
+.contact-cta-note {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  justify-content: center;
+  padding-block: 18px 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.contact-cta-note svg {
+  flex: 0 0 auto;
+  color: var(--forest-700);
 }
 
 .mini-assurance {
@@ -1105,8 +1204,7 @@ main {
   }
 
   .section-heading,
-  .seasonal-layout,
-  .quote-layout {
+  .seasonal-layout {
     grid-template-columns: 1fr;
     gap: 30px;
   }
@@ -1128,14 +1226,22 @@ main {
     min-height: 430px;
   }
 
-  .quote-actions {
-    width: fit-content;
-  }
-
   .content-grid,
   .service-detail-grid,
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contact-cta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-cta-photos {
+    grid-column: auto;
+  }
+
+  .contact-cta-content {
+    width: min(70%, 560px);
   }
 
   .footer-grid {
@@ -1266,6 +1372,48 @@ main {
 
   .reviews-footer {
     gap: 14px;
+  }
+
+  .contact-cta-section {
+    padding-block: 62px 22px;
+  }
+
+  .contact-cta-card,
+  .contact-cta-photos {
+    min-height: 430px;
+  }
+
+  .contact-cta-shade {
+    background:
+      linear-gradient(
+        0deg,
+        rgba(251, 250, 245, 0.98) 0%,
+        rgba(251, 250, 245, 0.9) 48%,
+        rgba(251, 250, 245, 0.28) 82%
+      );
+  }
+
+  .contact-cta-content {
+    width: 100%;
+    justify-content: flex-end;
+    padding: 26px 22px;
+  }
+
+  .contact-cta-content > strong {
+    font-size: 2.35rem;
+  }
+
+  .contact-cta-copy {
+    max-width: 100%;
+  }
+
+  .contact-cta-button {
+    width: 100%;
+  }
+
+  .contact-cta-note {
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .assurance-grid {

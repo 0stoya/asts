@@ -5,10 +5,10 @@ import {
   Camera,
   CheckCircle2,
   MapPin,
-  MessageCircle,
   Phone,
 } from "lucide-react";
 
+import { ContactCtas } from "@/src/components/ContactCtas";
 import { CustomerReviews } from "@/src/components/CustomerReviews";
 import { SeasonalAdvice } from "@/src/components/SeasonalAdvice";
 import { currentSeason } from "@/src/config/seasons";
@@ -159,27 +159,7 @@ export default function Home() {
 
       <CustomerReviews />
 
-      <section className="quote-band">
-        <div className="shell quote-layout">
-          <div>
-            <span className="eyebrow">Need some work doing?</span>
-            <h2>Show us the garden.</h2>
-            <p>
-              Send a few photos and a short description of what you need. It is
-              a much better starting point than trying to describe a 30-foot
-              conifer over the phone.
-            </p>
-          </div>
-          <div className="quote-actions">
-            <a className="button button-primary" href={site.whatsappHref} target="_blank" rel="noreferrer">
-              <MessageCircle size={18} /> Send photos on WhatsApp
-            </a>
-            <Link className="button button-ghost-dark" href="/contact">
-              Request a quote <ArrowRight size={18} />
-            </Link>
-          </div>
-        </div>
-      </section>
+      <ContactCtas />
 
       <section className="mini-assurance">
         <div className="shell assurance-grid">
