@@ -9,7 +9,7 @@ export type ProjectService =
 export const projectArtwork: Record<ProjectService, string> = {
   "tree-surgery": "/images/projects/tree-surgery/tree_surgery.png",
   "hedge-cutting": "/images/projects/hedge-cutting/hedge_c.png",
-  "tree-removal": "/images/projects/tree_removal.png",
+  "tree-removal": "/images/projects/tree-removal/tree_removal.png",
   "stump-grinding": "/images/projects/stump-grinding/stump_g.png",
   "garden-clearance": "/images/projects/garden-clearance/garden_c.png",
   landscaping: "/images/projects/landscaping/landscaping.png",
